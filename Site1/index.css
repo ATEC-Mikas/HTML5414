@@ -17,7 +17,8 @@ p.intro {
 }
 .galeria {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    align-content: space-around;
     flex-direction: row;
     flex-flow: wrap;
     justify-content: center;
@@ -39,6 +40,8 @@ p.intro {
 }
 .galeria img {
     border: 1px solid black;
+    max-width: 300px;
+    max-height: 300px;
 }
 .galeria article p {
     width: 80%;

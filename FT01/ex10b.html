@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Tabelax</title>
+        <style>
+            table,th,td {
+                border:1px solid black;
+            }
+            th {
+                color:blue;
+            }
+            th,td {
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+            }
+            tr > td {
+                background-color: yellow;
+                color:green;
+            }
+            tr > td:first-child {
+                background-color: pink;
+                color:black;
+            }
+            tr > td:last-child {
+                background-color: red;
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Aluno</th>
+                <th>Frequencia</th>
+                <th>1º Chamada</th>
+                <th>2º Chamada</th>
+                <th>Final</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>12.5</td>
+                <td>14.2</td>
+                <td></td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>12.5</td>
+                <td>14.2</td>
+                <td></td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>12.5</td>
+                <td>14.2</td>
+                <td></td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média</th>
+                <th>13.3</th>
+            </tr>
+        </table>
+    </body>
+</html>
