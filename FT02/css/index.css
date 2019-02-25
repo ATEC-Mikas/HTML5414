@@ -18,7 +18,7 @@
 footer {
     background-color: rgb(80, 75, 75);
     color: white;
-    padding:10px;
+    padding:10px 0 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,6 +116,7 @@ header {
     max-height: 85%;
 }
 .galeria article:hover {
+    margin:8px;
     border: 2px gold solid;
 }
 .comment {
