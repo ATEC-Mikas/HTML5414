@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Exercicio 12 B</title>
+        <meta charset="utf-8"/>
+        <style>
+            label {
+                display: block;
+                margin: 20px 0 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="#">
+            <label>
+                Nome:<br/>
+                <input type="text" placeholder="Nome..." name="Nome">
+            </label>
+            <label>
+                Email:<br/>
+                <input type="email" placeholder="Email..." name="Email">
+            </label>
+            <label>
+                Tipo Pedido:<br/>
+                <input list="pedidos" name="pedido"/>
+                <datalist id="pedidos">
+                    <option value="Tipo Pedido 1"/>
+                    <option value="Tipo Pedido 2"/>
+                    <option value="Tipo Pedido 3"/>
+                    <option value="Tipo Pedido 4"/>
+                    <option value="Tipo Pedido 5"/>
+                    <option value="Tipo Pedido 6"/>
+                </datalist>
+            </label>
+            <label>
+                    Tipo Avaria:<br/>
+                    <input list="avarias" name="avaria"/>
+                    <datalist id="avarias">
+                        <option value="Tipo Avarias 1"/>
+                        <option value="Tipo Avarias 2"/>
+                        <option value="Tipo Avarias 3"/>
+                        <option value="Tipo Avarias 4"/>
+                        <option value="Tipo Avarias 5"/>
+                        <option value="Tipo Avarias 6"/>
+                    </datalist>
+                </label>
+            <label>
+                Descrição:<br/>
+                <textarea name="Desc" rows="10" cols="30" placeholder="Descrição"></textarea>
+            </label>
+        </form>
+    </body>
+</html>

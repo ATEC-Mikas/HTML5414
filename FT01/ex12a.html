@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Exercicio 12 A</title>
+        <meta charset="utf-8"/>
+        <style>
+            label {
+                display: block;
+                margin: 20px 0 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="#">
+            <label>
+                Nome:<br/>
+                <input type="text" placeholder="Nome..." name="Nome">
+            </label>
+            <label>
+                Email:<br/>
+                <input type="email" placeholder="Email..." name="Email">
+            </label>
+            <label>
+                Curso:<br/>
+                <input list="cursos" name="curso"/>
+                <datalist id="cursos">
+                    <option value="Curso 1"/>
+                    <option value="Curso 2"/>
+                    <option value="Curso 3"/>
+                    <option value="Curso 4"/>
+                    <option value="Curso 5"/>
+                    <option value="Curso 6"/>
+                </datalist>
+            </label>
+            <label>
+                Horário:<br/>
+                <input type="radio" name="horario" value="Diurno"/> Diurno
+                <br/>
+                <input type="radio" name="horario" value="Noturno"/> Noturno
+            </label>
+        </form>
+    </body>
+</html>
