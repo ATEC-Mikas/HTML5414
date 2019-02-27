@@ -1,0 +1,147 @@
+* {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+body {
+    margin:0;
+    background-color: #3b3b3b;
+}
+header {
+    background-color: #1d89e2;
+    height: 200px;
+}
+nav{
+    background-color: #3b3b3b;
+    height: 51px;
+    line-height: 50px;
+    text-align: center
+}
+nav ul{
+    margin:0;
+}
+nav ul li {
+    display: inline;
+    background-color: #fff;
+    padding:10px;
+    margin:2px;
+    border-radius: 5px 0 5px 0;
+    border-bottom: 3px solid #1d89e2;
+}
+nav ul li:hover {
+    background-color: #1d89e2;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+nav ul a {
+    text-decoration: none;
+    color: #1d89e2;
+}
+section {
+    background-color: #fff;
+    min-height: 400px;
+}
+section *:first-child {
+    /*margin:0;*/
+}
+section h1{
+    margin:0;
+    padding:20px;
+    text-align: center;
+    font-size: 16px;
+    color:#1d89e2;
+}
+footer {
+    background-color: #3b3b3b;
+    height: 100px;
+    padding:30px;
+}
+footer p {
+    color:#fff;
+    text-align: center;
+    font-size: 11px;
+}
+
+section.formulario {
+    width: 80%;
+    margin: 0px auto;
+}
+
+section.sobre {
+    width: 80%;
+    margin: 0 auto;
+}
+section.inicio {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.services section.servicos {
+    width: 60%;
+    margin:0 auto;
+}
+
+section.services section.servicos article{
+    width: 30%;
+    margin:1%;
+    display: inline-block;
+    vertical-align: top;
+}
+section.services section.servicos article:first-child{
+    margin-left: 2%;
+}
+section.services section.servicos article img{
+    width: 100%;
+}
+section.services section.servicos article p{
+    text-align: center;
+}
+input, textarea {
+    width: 100%;
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    line-height: 24px;
+    padding: 10px 15px;
+    letter-spacing: 0.3px;
+    margin: 5px;
+}
+textarea {
+    resize: none;
+}
+input:focus, textarea:focus {
+    outline: #4976db solid;
+}
+p.botoes {
+    text-align: center;
+    margin:0;
+}
+/*p.botoes input */
+input[type="submit"] ,input[type="reset"] {
+    width: 30%;
+    color:#fff;
+    background-color: #3b3b3b;
+    font-size: 18px;
+}
+input[type="submit"]:hover ,input[type="reset"]:hover {
+    background-color: #1d89e2;
+}
+article.imagem {
+    width: 25%;
+    display: inline-block;
+}
+article.texto {
+    width: 65%;
+    display: inline-block;
+    margin:0 2%;
+    vertical-align: top;
+    font:16px;
+    text-align: justify;
+
+}
+article.texto p {
+    margin:0;
+}
+article.imagem img {
+    width: 100%;    
+}
