@@ -1,0 +1,101 @@
+.row, .row * {box-sizing: border-box;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.row::after {
+    content: "";
+    clear: both;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    background-color: #4d80d5;
+    border: 1px solid #2d40c6;
+    text-align: center;
+    color:white;
+}
+
+.filler {
+    min-height: 100em;
+    background-color: gray;
+    text-align: center;
+}
+
+body,html {
+    margin:0;
+}
+
+header {
+    text-align: center;
+    background-color: dodgerblue;
+    min-height: 200px;
+    color:white;
+    
+}
+header h1 {
+    margin:0;
+    line-height: 6;
+}
+
+[class*="col-"] img{
+    width: 100%;
+}
+
+.hl:hover {
+    background-color: dodgerblue;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 20px;
+    padding:5px;
+    background-color: gray;
+    border-radius: 20px 0 0 20px;
+    border:1px solid black;
+}
+.sidebar article img{
+    height: 32px;
+    width: 32px;
+    padding:5px;
+}
+.sidebar article img:hover {
+    height: 37px;
+    width: 37px;
+    padding:0;
+    padding-bottom:5px;
+}
+@media screen and (max-width:650px) {
+    .sidebar{
+        display: none;
+    }
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.button {
+    margin:0;
+    background-color: gray;
+    padding:10px 0;
+    border-radius: 20px;
+    animation: rainbow 18s ease infinite;
+}
+
+@keyframes rainbow { 
+    0%{background-color:blue;}
+    25%{background-color:green;}
+    75%{background-color:red;}
+    100%{background-color:blue;}
+}
