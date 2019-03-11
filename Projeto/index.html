@@ -1,7 +1,7 @@
 <!Doctype HTML>
 <html>
     <head>
-        <title>CV | Miguel Pereira</title>
+        <title>Miguel Pereira Curriculum Vitae</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <!-- imports -->
@@ -13,7 +13,7 @@
         <script src="js/index.js"></script>
         <link rel="icon" href="imgs/letter-m.png">
     </head>
-    <body onload="includeHTML();">
+    <body>
         <div class="container-fluid">
             <header class="row">
                 <section class="col-md-12 apresentacao">
@@ -22,24 +22,41 @@
                         <span>Miguel "Mikas" Pereira</span>
                     </article>
                 </section>
-                <section class="col-md-12 menu">
-                    <article include-html="_opcoes.html">
-                    </article>
-                </section>
+                <section class="col-md-12 separador"></section>
             </header>
             <main class="row">
-                <section class="col-md-12 qualificacoes flex-lista">
+
+                <section class="col-md-12 sobre">
+                    <p class="titulo">Sobre mim:</p>
+                    <article>
+                        <strong>Idade: </strong><p>18 Anos</p>
+                        <strong>Caracteristicas:</strong><p>Coiso e Tal</p>
+                        <strong>Descrição:</strong><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum debitis id est et perferendis nobis ipsam aliquam voluptatibus soluta officia praesentium ratione repudiandae cupiditate magnam quas dignissimos nesciunt, esse distinctio.</p>
+                    </article>
+                </section>
+
+                <section class="col-md-12 separador"></section>
+                <section class="col-md-6 atualmente  border-mikas">
+                    <p class="titulo">Atualmente:</p>
+                    <article>
+                        <a target="_blank" rel="noopener noreferrer" class="sneaky" href="https://www.atec.pt/">
+                            <img src="imgs/ATEC-Logo.png" alt="logo Atec"/>
+                            <span class="titulo">Atec</span>
+                        </a>
+                        <span class="descricao">Curso de Técnico/a Especialista em Tecnologias e Programação de Sistemas de Informação </span>
+                    </article>
+                </section>
+                <section class="col-md-6 qualificacoes">
                     <p class="titulo">Qualificações:</p>
-                    <div class="flex-lista">
                         <article>
-                            <a target="_blank" rel="noopener noreferrer" class="sneaky" href="#">
+                            <a target="_blank" rel="noopener noreferrer" class="sneaky" href="http://www.ruizcosta.edu.pt/">
                                 <img src="imgs/logoERC.png" alt="logoERC"/>
                                 <span class="titulo">Ruiz Costa</span>
                             </a>
-                            <span class="descricao">Gestão e Programação de Sistemas Informáticos - Média final de curso <span class="green">16</span>
+                            <span class="descricao">Gestão e Programação de Sistemas Informáticos - Média final de curso <span class="green">16</span></span>
                         </article>
-                    </div>
                 </section>
+                <section class="col-md-12 separador"></section>
                 <section class="col-md-12 portofolio">
                     <p class="titulo">Portofolio (Trabalhos realizados)</p>
                     <div class="flex-lista">
@@ -88,10 +105,149 @@
                                 <img src="imgs/Tampermonkey.png" alt="LusoRegisto+"/>
                                 <span class="titulo">LusoRegisto+</span>
                             </a>
-                            <span class="descricao"> Trabalho realizado para aprender a interagir com o TamperMonkey, auxiliando um hobby meu na altura</span>
+                            <span class="descricao"> Trabalho realizado para aprender a interagir com o 
+                                <a rel="noopener noreferrer" target="_blank" class="sneaky" href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=pt-PT">TamperMonkey</a>
+                                , auxiliando um hobby meu na altura</span>
+                        </article>
+                        <article>
+                            <a target="_blank" rel="noopener noreferrer" class="sneaky" href="https://mikasonwar.github.io/Pagina-Pessoal/logo/index.html">
+                                <img src="imgs/logoERC.png" alt="eRc"/>
+                                <span class="titulo">Logo da eRC em CSS</span>
+                            </a>
+                            <span class="descricao"> Logo da Escola Profissional de Ruiz Costa Feito com CSS</span>
+                        </article>
+                        <article>
+                            <a target="_blank" rel="noopener noreferrer" class="sneaky" href="https://mikasonwar.github.io/Pagina-Pessoal/damas/damas.html">
+                                <img src="imgs/checkers.png" alt="Damas"/>
+                                <span class="titulo">Damas (Inacabado)</span>
+                            </a>
+                            <span class="descricao">Um jogo de damas para avançar o meu conhecimento de JS e tentar entender o processo de um simples jogo</span>
                         </article>
                     </div>
                 </section>
+
+                <section class="col-md-12 separador"></section>
+
+                <section class="col-md-12"> 
+                    <p class="titulo">Habilitações:</p>
+                    <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <img src="imgs/csharp.png" alt="csharp"/>
+                                    C#
+                                </td>
+                                <td>
+                                    <div class="progressbar">
+                                        <div class="fill green" style="width:88%"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td>
+                                    <img src="imgs/Teamspeak3.png" alt="teamspeak3"/>
+                                    TeamSpeak3
+                                </td>
+                                <td> 
+                                    <div class="progressbar">
+                                        <div class="fill green ts" style="width: 85%"></div>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <img src="imgs/RoR.png" alt="Ruby on Rails"/>
+                                    Ruby on Rails
+                                </td>
+                                <td>
+                                    <div class="progressbar">
+                                        <div class="fill green" style="width:65%"></div>
+                                    </div>
+                                </td>
+                              </tr>
+
+                                <tr>
+                                    <td>
+                                        <img src="imgs/server.png" alt="server"/>
+                                        Servidores
+                                    </td>
+                                    <td>
+                                        <div class="progressbar">
+                                            <div class="fill yellow" style="width:56%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="imgs/jquery.png" alt="jquery"/>
+                                        JQuery
+                                    </td>
+                                    <td>
+                                        <div class="progressbar">
+                                            <div class="fill yellow" style="width:55%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="imgs/cpp.png" alt="cpp"/>
+                                        C++
+                                    </td>
+                                    <td>
+                                        <div class="progressbar">
+                                            <div class="fill yellow" style="width:50%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="imgs/C.png" alt="C"/>
+                                        C
+                                    </td>
+                                    <td>
+                                        <div class="progressbar">
+                                            <div class="fill yellow" style="width:50%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="imgs/javascript.png" alt="javascript"/>
+                                        JavaScript
+                                    </td>
+                                    <td>
+                                        <div class="progressbar">
+                                            <div class="fill yellow" style="width:45%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="imgs/css.png" alt="css"/>
+                                        CSS
+                                    </td>
+                                    <td>
+                                        <div class="progressbar">
+                                            <div class="fill yellow" style="width:42%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="imgs/repairing.png" alt="troubleshoot"/>
+                                        TroubleShooting
+                                    </td>
+                                    <td>
+                                        <div class="progressbar">
+                                            <div class="fill yellow" style="width:40%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                          </table>
+                </section>
+
+
             </main>
 
             <footer class="row">
