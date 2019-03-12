@@ -1,17 +1,32 @@
 body {
     margin:0;
     background-color: gray;
-}
-header section.apresentacao {
-    color: white;
-    background-color: dodgerblue;
     background-image: url("../imgs/bg.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.contentor-mikas {
+    
+    max-width: 800px;
+}
+
+
+header section.apresentacao {
+    color: white;
+    background-color: transparent;
     text-align: center;
     padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+header section.start-size {
+    padding:35vh 0;
+    /* height: 100vh; */
 }
 header section.apresentacao article {
     text-align: center;
@@ -74,6 +89,8 @@ footer {
     text-align: center;
     background-color: gray;
     color:white;
+    margin-bottom: 50px;
+    border-radius: 0 0 10px 10px;
 }
 footer section article {
     margin:20px 0;
@@ -95,9 +112,15 @@ section.qualificacoes article {
     width: 100%;
     text-align: center;
     min-width: 200px;
+    border:2px solid dodgerblue;
+    margin:10px 0;
+    border-radius: 9px;
+    background-color: dodgerblue;
+    color:white;
 }
 section.qualificacoes img{
  max-width: 200px;
+ padding:10px;
 }
 section.qualificacoes article .titulo {
     font-size: 24px;
@@ -109,9 +132,15 @@ section.atualmente article {
     width: 100%;
     text-align: center;
     min-width: 200px;
+    border:2px solid dodgerblue;
+    margin:10px 0;
+    border-radius: 9px;
+    background-color: dodgerblue;
+    color:white;
 }
 section.atualmente img{
  max-width: 200px;
+ padding:10px;
 }
 section.atualmente article .titulo {
     font-size: 24px;
@@ -123,25 +152,53 @@ section.portofolio {
 section.portofolio article {
     display: inline-block;
     padding:30px 20px;
-    width: 25%;
+    width: 31%;
     min-width: 200px;
     text-align: center;
+    border: 2px solid dodgerblue;
+    margin: 10px 1%;
+    border-radius: 9px;
+    background-color: dodgerblue;
+    color: white;
 }
 section.portofolio img{
  max-width: 200px;
  max-height: 100px;
+ padding:10px;
 }
 section.portofolio article .titulo {
     font-size: 24px;
+    
+    border-bottom: 2px solid white;
+    
     display: block;
 }
 section.portofolio article .descricao {
     text-align: start;
     display: block;
+    margin:10px auto;
+    max-width: 350px;
+}
+section.atualmente article .descricao {
+    text-align: start;
+    display: block;
+    margin:10px auto;
+    max-width: 350px;
+}
+
+section.qualificacoes article .descricao {
+    text-align: start;
+    display: block;
+    margin:10px auto;
+    max-width: 350px;
+}
+
+section.sobre article {
+    max-width: 900px;
 }
 
 span.green {
-    color:green;
+    color:#9bec9b;
 }
 a.sneaky {
     color:inherit;
@@ -181,10 +238,10 @@ div.red {
     background-color: red;
 }
 div.yellow {
-    background-color: yellow;
+    background-color: #d6d628;
 }
 div.green {
-    background-color: green;
+    background-color: #03a203;
 }
 div.fill {
     border-radius: 20px;
@@ -198,3 +255,53 @@ section.sobre article {
     width: 80%;
     margin:10px auto;   
 }
+.teste {
+    animation: myfirst 0.3s linear;
+}
+.backwards {
+    animation: myfirst 0.3s linear;
+    animation-direction: reverse;
+}
+.blocked {
+    display: none;
+}
+.modal {
+    color:black;
+    text-align: start;
+}
+
+@keyframes myfirst {
+    0%   { padding: 33vh 0;}
+    100% { padding: 0;}
+}
+
+/* Regras media */
+
+@media screen and (max-width:299px) {
+    .blocked{
+        display: block;
+        position: fixed;
+        background-color: gray;
+        text-align: center;
+        color:red;
+        z-index: 9999;
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+}
+@media screen and (min-width:300px) and (max-width:767px) {
+    section.qualificacoes {
+        border-left:none;
+    }
+}
+@media screen and (min-height:200px) and (max-height:700px) {
+    .teste {
+        animation:none;
+    }
+    header section.apresentacao { height: 100%;padding-bottom:30px;}
+    header section.start-size {height: 100%; padding:0;padding-bottom:30px;}
+}
+
+
