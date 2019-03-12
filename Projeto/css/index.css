@@ -25,7 +25,7 @@ header section.apresentacao {
     width: 100%;
 }
 header section.start-size {
-    padding:35vh 0;
+    padding:40vh 0;
     /* height: 100vh; */
 }
 header section.apresentacao article {
@@ -98,6 +98,9 @@ footer section article {
 footer section article.links img {
     width: 40px;
     margin: 0 5px;
+}
+footer section article.links a:hover {
+    text-decoration: none;
 }
 main section {
     padding:10px;
@@ -271,7 +274,7 @@ section.sobre article {
 }
 
 @keyframes myfirst {
-    0%   { padding: 33vh 0;}
+    0%   { padding: 40vh 0;}
     100% { padding: 0;}
 }
 
