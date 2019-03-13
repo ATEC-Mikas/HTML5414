@@ -173,10 +173,16 @@ section.atualmente article .titulo {
     font-size: 24px;
     display: block;
 }
+section.portofolio .flex-coluna {
+    /* flex-direction: column; */
+    width: 48%;
+    margin:1%;
+}
 section.portofolio article {
     display: inline-block;
     padding:30px 20px;
     width: 31%;
+    width: 100%;
     min-width: 200px;
     text-align: center;
     border: 2px solid rgb(30, 144, 255);
@@ -299,6 +305,9 @@ footer section article.links a:hover {
     section.qualificacoes {
         border-left:none;
     }
+    .flex-coluna {
+        width: 100% !important;
+    }
 }
 @media screen and (min-width:200px) and (max-width:700px) {
     .anim {animation:none;}
@@ -306,7 +315,7 @@ footer section article.links a:hover {
     header section.start-size {height: 100%; padding:0;padding-bottom:30px;}
 }
 
-@media screen and (max-width:800px) {
+/* @media screen and (max-width:800px) {
     header section.apresentacao {
         background-image: url("../imgs/bg.jpg");
         background-repeat: no-repeat;
@@ -314,6 +323,6 @@ footer section article.links a:hover {
         background-attachment: fixed;
         background-size: cover;
     }
-}
+} */
 
 
