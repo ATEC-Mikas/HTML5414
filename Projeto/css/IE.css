@@ -1,0 +1,13 @@
+.blocked{
+    display: block;
+    position: fixed;
+    background-color: gray;
+    text-align: center;
+    color:red;
+    z-index: 9999;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "Browser não suportado, Atualize-se";
+}
