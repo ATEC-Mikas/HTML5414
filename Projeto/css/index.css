@@ -295,10 +295,8 @@ footer section article.links a:hover {
         border-left:none;
     }
 }
-@media screen and (min-height:200px) and (max-height:700px) {
-    .anim {
-        animation:none;
-    }
+@media screen and (min-width:200px) and (max-width:700px) {
+    .anim {animation:none;}
     header section.apresentacao { height: 100%;padding-bottom:30px;}
     header section.start-size {height: 100%; padding:0;padding-bottom:30px;}
 }
