@@ -1,0 +1,51 @@
+/* div.teste {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding:100px;
+    color:white;
+    border-radius: 20px;
+} */
+
+body {
+    margin:0;
+    background-color: rgba(74, 72, 72, 0.5)
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid black;
+}
+
+header nav a {
+    height: 20px;
+    display: inline-block;
+    color:inherit;
+    border: 1px solid black;
+    padding:10px;
+    text-decoration: none;
+}
+
+header nav a.a1:hover {
+    background-color: aqua;
+    transition: background-color 2s ease-in 0s;
+}
+
+header nav a.a2:hover {
+    border-radius: 30px;
+    transition: border-radius 2s linear 0.3s;
+}
+
+header nav a.a3:hover {
+    height: 100px;
+    transition: height 2s linear 0s;
+}
+
+header nav a.a4:hover {
+    transform: scale(1.1,1.1);
+    transition: transform 0.3s linear 0s;
+}
